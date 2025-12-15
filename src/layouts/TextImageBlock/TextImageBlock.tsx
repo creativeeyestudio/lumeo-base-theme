@@ -1,10 +1,10 @@
 import React from 'react'
 import TextImageProps from './TextImage.interface'
-import styles from './TextImage.module.css'
+import styles from './TextImageBlock.module.css'
 
 const TextImageBlock: React.FC<TextImageProps> = (props) => {
   return (
-    <div>TextImageBlock</div>
+    <section className={styles.TextImageBlock}>TextImageBlock</section>
   )
 }
 

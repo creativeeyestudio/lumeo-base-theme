@@ -1,9 +1,10 @@
 import React from 'react'
 import TextIntroBlockProps from './TextIntroBlock.interface'
+import styles from './TextIntroBlock.module.css'
 
 const TextIntroBlock: React.FC<TextIntroBlockProps> = (props) => {
   return (
-    <div>TextIntroBlock</div>
+    <section className={styles.TextIntroBlock}>TextIntroBlock</section>
   )
 }
 
