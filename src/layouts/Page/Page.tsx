@@ -1,9 +1,15 @@
 import React from 'react'
 import { PageProps } from './Page.interface'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
-const Page: React.FC<PageProps> = (props) => {
+const Page: React.FC<PageProps> = () => {
   return (
-    <div>Page</div>
+    <>
+      <Header />
+      <main></main>
+      <Footer />
+    </>
   )
 }
 
