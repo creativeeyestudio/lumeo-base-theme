@@ -1,0 +1,12 @@
+import { defineConfig } from "tsup";
+
+export default defineConfig({
+  entry: ["src/index.ts"],
+  format: ["cjs", "esm"],
+  dts: true,
+  sourcemap: true,
+  clean: true,
+  minify: false,
+  external: ["react", "react-dom"], // ne pas bundler React
+  target: "es2019",
+});
