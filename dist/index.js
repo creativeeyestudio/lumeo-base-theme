@@ -27,25 +27,21 @@ var Card = (props) => {
 var Card_default = Card;
 
 // src/components/Image/Image.tsx
-import { jsx as jsx3 } from "react/jsx-runtime";
 var NextImage;
 try {
   NextImage = __require("next/image").default;
 } catch (error) {
   NextImage = null;
 }
-var ThemeImage = ({ src, alt, width, height }) => {
-  if (NextImage) {
-    return /* @__PURE__ */ jsx3(NextImage, { src, alt, width, height });
-  }
-  return /* @__PURE__ */ jsx3("img", { src: "", alt: "" });
+var ThemeImage = () => {
+  return;
 };
 var Image_default = ThemeImage;
 
 // src/components/Text/Text.tsx
-import { jsx as jsx4 } from "react/jsx-runtime";
+import { jsx as jsx3 } from "react/jsx-runtime";
 var Text = (props) => {
-  return /* @__PURE__ */ jsx4("div", { children: "Text" });
+  return /* @__PURE__ */ jsx3("div", { children: "Text" });
 };
 var Text_default = Text;
 
@@ -53,51 +49,51 @@ var Text_default = Text;
 var _default3 = {};
 
 // src/layouts/HeroscreenBlock/HeroscreenBlock.tsx
-import { jsx as jsx5 } from "react/jsx-runtime";
+import { jsx as jsx4 } from "react/jsx-runtime";
 var HeroscreenBlock = (props) => {
-  return /* @__PURE__ */ jsx5("figure", { className: _default3.HeroscreenBlock });
+  return /* @__PURE__ */ jsx4("figure", { className: _default3.HeroscreenBlock });
 };
 var HeroscreenBlock_default = HeroscreenBlock;
 
 // src/layouts/HtmlContentBlock/HtmlContentBlock.tsx
-import { jsx as jsx6 } from "react/jsx-runtime";
+import { jsx as jsx5 } from "react/jsx-runtime";
 var HtmlContentBlock = (props) => {
-  return /* @__PURE__ */ jsx6("div", { children: "HtmlContentBlock" });
+  return /* @__PURE__ */ jsx5("div", { children: "HtmlContentBlock" });
 };
 var HtmlContentBlock_default = HtmlContentBlock;
 
 // src/layouts/ParallaxBlock/ParallaxBlock.tsx
-import { jsx as jsx7 } from "react/jsx-runtime";
+import { jsx as jsx6 } from "react/jsx-runtime";
 var ParallaxBlock = (props) => {
-  return /* @__PURE__ */ jsx7("div", { children: "ParallaxBlock" });
+  return /* @__PURE__ */ jsx6("div", { children: "ParallaxBlock" });
 };
 var ParallaxBlock_default = ParallaxBlock;
 
 // src/layouts/TextBlock/TextBlock.tsx
-import { jsx as jsx8 } from "react/jsx-runtime";
+import { jsx as jsx7 } from "react/jsx-runtime";
 var TextBlock = (props) => {
-  return /* @__PURE__ */ jsx8("div", { children: "TextBlock" });
+  return /* @__PURE__ */ jsx7("div", { children: "TextBlock" });
 };
 var TextBlock_default = TextBlock;
 
 // src/layouts/TextImageBlock/TextImageBlock.tsx
-import { jsx as jsx9 } from "react/jsx-runtime";
+import { jsx as jsx8 } from "react/jsx-runtime";
 var TextImageBlock = (props) => {
-  return /* @__PURE__ */ jsx9("div", { children: "TextImageBlock" });
+  return /* @__PURE__ */ jsx8("div", { children: "TextImageBlock" });
 };
 var TextImageBlock_default = TextImageBlock;
 
 // src/layouts/TextImageDoubleBlock/TextImageDoubleBlock.tsx
-import { jsx as jsx10 } from "react/jsx-runtime";
+import { jsx as jsx9 } from "react/jsx-runtime";
 var TextImageDoubleBlock = (props) => {
-  return /* @__PURE__ */ jsx10("div", { children: "TextImageDoubleBlock" });
+  return /* @__PURE__ */ jsx9("div", { children: "TextImageDoubleBlock" });
 };
 var TextImageDoubleBlock_default = TextImageDoubleBlock;
 
 // src/layouts/TextIntroBlock/TextIntroBlock.tsx
-import { jsx as jsx11 } from "react/jsx-runtime";
+import { jsx as jsx10 } from "react/jsx-runtime";
 var TextIntroBlock = (props) => {
-  return /* @__PURE__ */ jsx11("div", { children: "TextIntroBlock" });
+  return /* @__PURE__ */ jsx10("div", { children: "TextIntroBlock" });
 };
 var TextIntroBlock_default = TextIntroBlock;
 

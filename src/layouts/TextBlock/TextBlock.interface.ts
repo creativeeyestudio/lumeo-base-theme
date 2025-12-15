@@ -1,1 +1,3 @@
-export default interface TextBlockProps {}
+export default interface TextBlockProps {
+    id: string | number
+}

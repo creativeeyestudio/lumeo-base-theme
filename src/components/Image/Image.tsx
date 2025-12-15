@@ -9,14 +9,16 @@ try {
     NextImage = null
 }
 
-const ThemeImage: React.FC<ImageProps> = ({ src, alt, width, height}) => {
-    if (NextImage) {
-        return <NextImage src={src} alt={alt} width={width} height={height} />
-    }
+const ThemeImage: React.FC<ImageProps> = () => {
+    // if (NextImage) {
+    //     return <NextImage src={src} alt={alt} width={width} height={height} />
+    // }
 
-    return (
-        <img src="" alt="" />
-    )
+    // return (
+    //     <img src="" alt="" />
+    // )
+
+    return;
 }
 
 export default ThemeImage
