@@ -5,7 +5,7 @@ import { PageLayoutProps } from './PageLayout.interface'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
-const Page: React.FC<PageLayoutProps> = () => {
+const PageLayout: React.FC<PageLayoutProps> = () => {
   return (
     <>
       <Header />
@@ -15,4 +15,4 @@ const Page: React.FC<PageLayoutProps> = () => {
   )
 }
 
-export default Page
+export default PageLayout

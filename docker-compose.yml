@@ -1,8 +1,15 @@
 services:
   theme:
     container_name: lumeo-base-theme
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - lumeo_theme_volume:/app/dist
+      - ./:/app
       - /app/node_modules
     tty: true
+
+volumes:
+  lumeo_theme_volume:
+    external: true
