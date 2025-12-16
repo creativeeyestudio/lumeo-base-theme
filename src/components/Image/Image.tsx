@@ -18,7 +18,7 @@ const ThemeImage: React.FC<ImageProps> = () => {
     //     <img src="" alt="" />
     // )
 
-    return;
+    return <></>;
 }
 
 export default ThemeImage

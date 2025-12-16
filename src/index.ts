@@ -1,4 +1,4 @@
 export * from './components'
-export * from './layouts'
+export * from './blocks'
 export * from './tokens'
 export * from './hooks/useTheme'

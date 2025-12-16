@@ -6,7 +6,31 @@
 .Card {
 }
 
-/* src/layouts/HeroscreenBlock/HeroscreenBlock.module.css */
+/* src/components/Text/Text.module.css */
+.Text {
+}
+
+/* src/blocks/HeroscreenBlock/HeroscreenBlock.module.css */
 .HeroscreenBlock {
+}
+
+/* src/blocks/ParallaxBlock/ParallaxBlock.module.css */
+.ParallaxBlock {
+}
+
+/* src/blocks/TextBlock/TextBlock.module.css */
+.TextBlock {
+}
+
+/* src/blocks/TextImageBlock/TextImageBlock.module.css */
+.TextImageBlock {
+}
+
+/* src/blocks/TextImageDoubleBlock/TextImageDoubleBlock.module.css */
+.TextImageDoubleBlock {
+}
+
+/* src/blocks/TextIntroBlock/TextIntroBlock.module.css */
+.TextIntroBlock {
 }
 /*# sourceMappingURL=index.css.map */

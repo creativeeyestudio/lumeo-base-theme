@@ -27,6 +27,7 @@ var Card = (props) => {
 var Card_default = Card;
 
 // src/components/Image/Image.tsx
+import { Fragment, jsx as jsx3 } from "react/jsx-runtime";
 var NextImage;
 try {
   NextImage = __require("next/image").default;
@@ -34,66 +35,84 @@ try {
   NextImage = null;
 }
 var ThemeImage = () => {
-  return;
+  return /* @__PURE__ */ jsx3(Fragment, {});
 };
 var Image_default = ThemeImage;
 
+// src/components/Text/Text.module.css
+var _default3 = {};
+
 // src/components/Text/Text.tsx
-import { jsx as jsx3 } from "react/jsx-runtime";
+import { jsx as jsx4 } from "react/jsx-runtime";
 var Text = (props) => {
-  return /* @__PURE__ */ jsx3("div", { children: "Text" });
+  return /* @__PURE__ */ jsx4("section", { className: _default3.Text, children: "Text" });
 };
 var Text_default = Text;
 
-// src/layouts/HeroscreenBlock/HeroscreenBlock.module.css
-var _default3 = {};
+// src/blocks/HeroscreenBlock/HeroscreenBlock.module.css
+var _default4 = {};
 
-// src/layouts/HeroscreenBlock/HeroscreenBlock.tsx
-import { jsx as jsx4 } from "react/jsx-runtime";
+// src/blocks/HeroscreenBlock/HeroscreenBlock.tsx
+import { jsx as jsx5 } from "react/jsx-runtime";
 var HeroscreenBlock = (props) => {
-  return /* @__PURE__ */ jsx4("figure", { className: _default3.HeroscreenBlock });
+  return /* @__PURE__ */ jsx5("figure", { className: _default4.HeroscreenBlock });
 };
 var HeroscreenBlock_default = HeroscreenBlock;
 
-// src/layouts/HtmlContentBlock/HtmlContentBlock.tsx
-import { jsx as jsx5 } from "react/jsx-runtime";
+// src/blocks/HtmlContentBlock/HtmlContentBlock.tsx
+import { jsx as jsx6 } from "react/jsx-runtime";
 var HtmlContentBlock = (props) => {
-  return /* @__PURE__ */ jsx5("div", { children: "HtmlContentBlock" });
+  return /* @__PURE__ */ jsx6("div", { children: "HtmlContentBlock" });
 };
 var HtmlContentBlock_default = HtmlContentBlock;
 
-// src/layouts/ParallaxBlock/ParallaxBlock.tsx
-import { jsx as jsx6 } from "react/jsx-runtime";
+// src/blocks/ParallaxBlock/ParallaxBlock.module.css
+var _default5 = {};
+
+// src/blocks/ParallaxBlock/ParallaxBlock.tsx
+import { jsx as jsx7 } from "react/jsx-runtime";
 var ParallaxBlock = (props) => {
-  return /* @__PURE__ */ jsx6("div", { children: "ParallaxBlock" });
+  return /* @__PURE__ */ jsx7("div", { className: _default5.ParallaxBlock, children: "ParallaxBlock" });
 };
 var ParallaxBlock_default = ParallaxBlock;
 
-// src/layouts/TextBlock/TextBlock.tsx
-import { jsx as jsx7 } from "react/jsx-runtime";
+// src/blocks/TextBlock/TextBlock.module.css
+var _default6 = {};
+
+// src/blocks/TextBlock/TextBlock.tsx
+import { jsx as jsx8 } from "react/jsx-runtime";
 var TextBlock = (props) => {
-  return /* @__PURE__ */ jsx7("div", { children: "TextBlock" });
+  return /* @__PURE__ */ jsx8("section", { className: _default6.TextBlock, children: "TextBlock" });
 };
 var TextBlock_default = TextBlock;
 
-// src/layouts/TextImageBlock/TextImageBlock.tsx
-import { jsx as jsx8 } from "react/jsx-runtime";
+// src/blocks/TextImageBlock/TextImageBlock.module.css
+var _default7 = {};
+
+// src/blocks/TextImageBlock/TextImageBlock.tsx
+import { jsx as jsx9 } from "react/jsx-runtime";
 var TextImageBlock = (props) => {
-  return /* @__PURE__ */ jsx8("div", { children: "TextImageBlock" });
+  return /* @__PURE__ */ jsx9("section", { className: _default7.TextImageBlock, children: "TextImageBlock" });
 };
 var TextImageBlock_default = TextImageBlock;
 
-// src/layouts/TextImageDoubleBlock/TextImageDoubleBlock.tsx
-import { jsx as jsx9 } from "react/jsx-runtime";
+// src/blocks/TextImageDoubleBlock/TextImageDoubleBlock.module.css
+var _default8 = {};
+
+// src/blocks/TextImageDoubleBlock/TextImageDoubleBlock.tsx
+import { jsx as jsx10 } from "react/jsx-runtime";
 var TextImageDoubleBlock = (props) => {
-  return /* @__PURE__ */ jsx9("div", { children: "TextImageDoubleBlock" });
+  return /* @__PURE__ */ jsx10("section", { className: _default8.TextImageDoubleBlock, children: "TextImageDoubleBlock" });
 };
 var TextImageDoubleBlock_default = TextImageDoubleBlock;
 
-// src/layouts/TextIntroBlock/TextIntroBlock.tsx
-import { jsx as jsx10 } from "react/jsx-runtime";
+// src/blocks/TextIntroBlock/TextIntroBlock.module.css
+var _default9 = {};
+
+// src/blocks/TextIntroBlock/TextIntroBlock.tsx
+import { jsx as jsx11 } from "react/jsx-runtime";
 var TextIntroBlock = (props) => {
-  return /* @__PURE__ */ jsx10("div", { children: "TextIntroBlock" });
+  return /* @__PURE__ */ jsx11("section", { className: _default9.TextIntroBlock, children: "TextIntroBlock" });
 };
 var TextIntroBlock_default = TextIntroBlock;
 
