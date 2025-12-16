@@ -6,7 +6,7 @@ import TextImageProps from "../../blocks/TextImageBlock/TextImage.interface";
 import TextImageDoubleBlockProps from "../../blocks/TextImageDoubleBlock/TextImageDoubleBlock.interface";
 import TextIntroBlockProps from "../../blocks/TextIntroBlock/TextIntroBlock.interface";
 
-export interface PageProps {
+export interface PageLayoutProps {
   id: number;
   title: string;
   slug: string;

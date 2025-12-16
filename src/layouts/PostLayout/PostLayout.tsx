@@ -1,17 +1,18 @@
+'use client'
+
 import React from 'react'
-import PostProps from './Post.interface'
+import PostLayoutProps from './PostLayout.interface'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
-const Post: React.FC<PostProps> = () => {
+const PostLayout: React.FC<PostLayoutProps> = () => {
   return (
     <>
         <Header />
         <main></main>
         <Footer />
     </>
-    
   )
 }
 
-export default Post
+export default PostLayout

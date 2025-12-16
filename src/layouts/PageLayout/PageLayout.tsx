@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react'
-import { PageProps } from './Page.interface'
+import { PageLayoutProps } from './PageLayout.interface'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 
-const Page: React.FC<PageProps> = () => {
+const Page: React.FC<PageLayoutProps> = () => {
   return (
     <>
       <Header />
