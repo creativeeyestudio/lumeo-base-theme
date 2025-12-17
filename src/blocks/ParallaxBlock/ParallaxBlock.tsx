@@ -4,7 +4,7 @@ import styles from './ParallaxBlock.module.css'
 
 const ParallaxBlock: React.FC<ParallaxBlockProps> = (props) => {
   return (
-    <div>ParallaxBlock</div>
+    <div className={styles.ParallaxBlock}>ParallaxBlock</div>
   )
 }
 

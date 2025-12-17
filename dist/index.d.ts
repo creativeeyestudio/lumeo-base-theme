@@ -14,35 +14,58 @@ interface CardProps {
 declare const Card: React.FC<CardProps>;
 
 interface ImageProps {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
+    id: string | number;
+    blockName: string | null;
+    blockType: string;
+    imageBlockField: {
+        id: string;
+        url: string;
+        alt?: string | null;
+    };
 }
 
 declare const ThemeImage: React.FC<ImageProps>;
 
 interface TextProps {
+    id: string | number;
+    blockName: string | null;
+    blockType: string;
+    textBlockField: string;
 }
 
 declare const Text: React.FC<TextProps>;
 
 interface HeroscreenBlockProps {
+    id: string;
+    alt: string | null;
+    url: string;
 }
 
 declare const HeroscreenBlock: React.FC<HeroscreenBlockProps>;
 
 interface HtmlContentBlockProps {
+    id: string;
+    htmlCode: string;
+    blockType: string;
+    blockName?: string | null;
 }
 
 declare const HtmlContentBlock: React.FC<HtmlContentBlockProps>;
 
 interface ParallaxBlockProps {
+    id: string;
+    parallax_image: {
+        id: string | number;
+        url: string;
+        alt?: string | null;
+    };
+    parallax_speed: number;
 }
 
 declare const ParallaxBlock: React.FC<ParallaxBlockProps>;
 
 interface TextBlockProps {
+    id: string | number;
 }
 
 declare const TextBlock: React.FC<TextBlockProps>;
@@ -58,6 +81,9 @@ interface TextImageDoubleBlockProps {
 declare const TextImageDoubleBlock: React.FC<TextImageDoubleBlockProps>;
 
 interface TextIntroBlockProps {
+    id: string;
+    blockName?: string | null;
+    blockType: string;
 }
 
 declare const TextIntroBlock: React.FC<TextIntroBlockProps>;
@@ -82,10 +108,4 @@ declare const spacing: {
 };
 type SpacingTokens = typeof spacing;
 
-type ThemeMode = 'light' | 'dark';
-declare const useTheme: (defaultMode?: ThemeMode) => {
-    mode: ThemeMode;
-    toggleTheme: () => void;
-};
-
-export { ButtonLink, Card, ColorTokens, HeroscreenBlock, HtmlContentBlock, ParallaxBlock, SpacingTokens, Text, TextBlock, TextImageBlock, TextImageDoubleBlock, TextIntroBlock, ThemeImage, ThemeMode, colors, spacing, useTheme };
+export { ButtonLink, Card, ColorTokens, HeroscreenBlock, HtmlContentBlock, ParallaxBlock, SpacingTokens, Text, TextBlock, TextImageBlock, TextImageDoubleBlock, TextIntroBlock, ThemeImage, colors, spacing };

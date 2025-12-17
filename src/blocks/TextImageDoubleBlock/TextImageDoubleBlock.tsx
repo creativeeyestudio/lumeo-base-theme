@@ -4,7 +4,7 @@ import styles from './TextImageDoubleBlock.module.css'
 
 const TextImageDoubleBlock: React.FC<TextImageDoubleBlockProps> = (props) => {
   return (
-    <div>TextImageDoubleBlock</div>
+    <section className={styles.TextImageDoubleBlock}>TextImageDoubleBlock</section>
   )
 }
 

@@ -1,6 +1,10 @@
 export default interface ImageProps {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
+    id: string | number;
+    blockName: string | null;
+    blockType: string;
+    imageBlockField: {
+        id: string;
+        url: string;
+        alt?: string | null;
+    };
 }
