@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 
 const Header: React.FC<HeaderProps> = () => {
   return (
-    <header></header>
+    <header className={styles.Header}></header>
   )
 }
 
