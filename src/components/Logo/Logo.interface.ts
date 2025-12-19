@@ -1,4 +1,4 @@
 export interface LogoProps {
-    src: string;
+    url: string;
     alt: string;
 }
