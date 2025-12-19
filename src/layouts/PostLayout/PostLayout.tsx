@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import PostLayoutProps from './PostLayout.interface'
 import Header from '../Header/Header'
