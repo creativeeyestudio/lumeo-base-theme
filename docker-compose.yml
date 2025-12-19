@@ -8,6 +8,8 @@ services:
       - lumeo_theme_volume:/app/dist
       - ./:/app
       - /app/node_modules
+    working_dir: /app
+    command: npm run dev
     tty: true
 
 volumes:
