@@ -8,6 +8,7 @@ import TextImageDoubleBlockProps from "../../blocks/TextImageDoubleBlock/TextIma
 import TextIntroBlockProps from "../../blocks/TextIntroBlock/TextIntroBlock.interface";
 
 export interface PageLayoutProps {
+  menus: any[];
   logo: LogoProps;
   page: {
     id: number;

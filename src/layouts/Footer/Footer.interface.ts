@@ -1,1 +1,3 @@
-export default interface FooterProps {}
+export default interface FooterProps {
+    menus?: any[]
+}
