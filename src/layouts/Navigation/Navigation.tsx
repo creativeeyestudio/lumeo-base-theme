@@ -1,7 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import NavigationProps, { NavLinkProps } from "./Navigation.interface";
 
-const Navigation: React.FC<NavigationProps> = ({ menus, menuId }) => {
+const Navigation: React.FC<NavigationProps> = ({ menus, menuId, locale }) => {
   const menu = menus.find((m) => m.menuId === menuId);
 
   if (!menu) {
@@ -20,9 +21,12 @@ const Navigation: React.FC<NavigationProps> = ({ menus, menuId }) => {
             id={item.id}
             label={item.label}
             type={item.type}
+            page={item.page}
+            post={item.post}
             url={item.url}
             newTab={item.newTab}
             noFollowLink={item.noFollowLink}
+            locale={locale}
           />
         ))}
       </ul>
@@ -35,9 +39,12 @@ export default Navigation;
 const NavLink: React.FC<NavLinkProps> = ({
   label,
   type,
+  page,
+  post,
   url,
   newTab,
   noFollowLink,
+  locale,
 }) => {
   const relValues = [
     newTab && "noopener noreferrer",
@@ -47,6 +54,18 @@ const NavLink: React.FC<NavLinkProps> = ({
     .join(" ");
   return (
     <li>
+      {type == "page" && page && (
+        <Link href={locale ? `/${locale}/${page.slug}` : `/${page.slug}`}>
+          {label}
+        </Link>
+      )}
+      {type == "post" && post && (
+        <Link
+          href={locale ? `/${locale}/blog/${post.slug}` : `/blog/${post.slug}`}
+        >
+          {label}
+        </Link>
+      )}
       {type == "external" && (
         <a
           href={url ? url : ""}

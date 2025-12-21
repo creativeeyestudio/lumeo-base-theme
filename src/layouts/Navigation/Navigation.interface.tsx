@@ -9,13 +9,21 @@ export interface Menu {
 export default interface NavigationProps {
   menus: Menu[];
   menuId: string;
+  locale?: string;
 }
 
 export interface NavLinkProps {
-  id: string; // ⚠️ dans tes données c’est une string, pas un number
+  id: string;
   label: string;
   newTab: boolean;
   noFollowLink: boolean;
   type: "page" | "post" | "external";
+  page?: {
+    slug: string;
+  }
+  post?: {
+    slug: string;
+  }
   url?: string;
+  locale?: string;
 }
