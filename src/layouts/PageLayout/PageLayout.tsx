@@ -20,9 +20,8 @@ const PageLayout: React.FC<PageLayoutProps> = ({
   menus,
   page,
 }: PageLayoutProps) => {
+  
   if (!page) return;
-
-  console.log(page);
 
   return (
     <>
