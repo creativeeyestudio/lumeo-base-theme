@@ -15,6 +15,7 @@ export interface NavLinkProps {
   id: string; // ⚠️ dans tes données c’est une string, pas un number
   label: string;
   newTab: boolean;
+  noFollowLink: boolean;
   type: "page" | "post" | "external";
   url?: string;
 }
