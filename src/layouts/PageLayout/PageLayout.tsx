@@ -23,6 +23,8 @@ const PageLayout: React.FC<PageLayoutProps> = ({
   
   if (!page) return;
 
+  console.log(page);
+  
   return (
     <>
       <Header>
@@ -52,7 +54,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({
             case 'text-double-image':
               return <TextImageDoubleBlock key={index} />
             case 'heroscreen':
-              return <HeroscreenBlock key={index} />
+              return <HeroscreenBlock key={index} hero_image={block.hero_image} />
             case 'parallax':
               return <ParallaxBlock key={index} parallax_image={{
                 url: block.parallax_image.url,
