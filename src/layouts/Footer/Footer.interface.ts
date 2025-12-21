@@ -1,3 +1,5 @@
+import React from "react";
+
 export default interface FooterProps {
-    menus?: any[]
+    children?: React.ReactNode
 }

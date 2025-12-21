@@ -1,7 +1,6 @@
 export default interface ParallaxBlockProps {
-    id: string;
+    blockType?: 'parallax';
     parallax_image: {
-        id: string | number;
         url: string;
         alt?: string | null;
     },

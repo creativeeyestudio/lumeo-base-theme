@@ -1,1 +1,3 @@
-export default interface TextImageProps {}
+export default interface TextImageProps {
+    blockType?: 'text-image';
+}

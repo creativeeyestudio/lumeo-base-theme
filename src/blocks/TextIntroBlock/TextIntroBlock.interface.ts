@@ -1,5 +1,4 @@
 export default interface TextIntroBlockProps {
-    id: string;
-    blockName?: string | null;
-    blockType: string;
+    blockType?: 'text-intro';
+    contentLayout: any[];
 }

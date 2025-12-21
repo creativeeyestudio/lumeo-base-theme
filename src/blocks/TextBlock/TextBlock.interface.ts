@@ -1,3 +1,4 @@
 export default interface TextBlockProps {
-    id: string | number
+    blockType?: 'content';
+    contentLayout?: any[];
 }
