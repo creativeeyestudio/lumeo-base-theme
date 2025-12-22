@@ -1,1 +1,9 @@
-.HeroscreenBlock {}
+.HeroscreenBlock {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.HeroscreenBlock__image {
+  object-fit: cover;
+}

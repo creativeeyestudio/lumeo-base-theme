@@ -1,24 +1,28 @@
 import React from "react";
-import type HeroscreenBlockProps from "./HeroscreenBlock.interface";
+import HeroscreenBlockProps from "./HeroscreenBlock.interface";
 import styles from "./HeroscreenBlock.module.css";
 import Image from "next/image";
 
-const HeroscreenBlock: React.FC<HeroscreenBlockProps> = ({ hero_image }) => {
+const HeroscreenBlock: React.FC<HeroscreenBlockProps> = ({
+  hero_image,
+  className,
+}) => {
+  if (!process.env.PAYLOAD_URL) {
+    console.error("Payload URL not found");
+    return null;
+  }
+
   return (
-    <div className={styles.HeroscreenBlock}>
-      {process.env.PAYLOAD_URL &&
-        hero_image.map((image, index) => (
-          <Image
-            src={process.env.PAYLOAD_URL + image.url}
-            alt={image.alt}
-            width={300}
-            height={400}
-            objectFit="cover"
-            objectPosition="center"
-            key={index}
-          />
-        ))}
-    </div>
+    <figure className={`${styles.HeroscreenBlock} ${className ?? ""}`}>
+      <Image
+        src={process.env.PAYLOAD_URL + hero_image.url}
+        alt={hero_image.alt ?? ""}
+        fill
+        className={styles.HeroscreenBlock__image}
+        style={{ objectFit: "cover", objectPosition: "center" }}
+        priority
+      />
+    </figure>
   );
 };
 
